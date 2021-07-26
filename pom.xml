@@ -49,8 +49,8 @@
   </properties>
   <repositories>
   <repository>
-  <id>premdcloud</id>
-  <url>https://pkgs.dev.azure.com/premdcloud/_packaging/premdcloud/maven/v1</url>
+  <id>myrepo</id>
+  <url>https://pkgs.dev.azure.com/premdcloud/prem/_packaging/myrepo/maven/v1</url>
   <releases>
     <enabled>true</enabled>
   </releases>
