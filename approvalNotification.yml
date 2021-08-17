@@ -1,0 +1,22 @@
+- stage: Level_1
+  condition: succeeded()
+  jobs:
+  - deployment: Approval 
+    environment: Level_1
+    strategy:
+     runOnce:  
+      deploy:
+        steps: 
+        - script: echo "Approved Level_1"
+
+- stage: Level_2
+  dependsOn: Level_1
+  condition: succeeded()
+  jobs:
+  - deployment: Approval 
+    environment: Level_2
+    strategy:
+     runOnce:  
+      deploy:
+        steps: 
+        - script: echo "Approved Level_2"
