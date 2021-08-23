@@ -7,7 +7,7 @@ trigger:
 - master
 parameters:
   - name: Build
-    type: bolean
+    type: boolean
     default: false
 
 pool:
