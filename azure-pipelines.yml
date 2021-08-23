@@ -13,9 +13,8 @@ parameters:
 pool:
   vmImage: ubuntu-latest
 
-- ${{ if eq(parameters.Build, true) }}:
-  - job: buildstage
-    steps:
+- ${{ if eq(parameters.runPerfTests, true) }}:
+  steps:
     - task: Maven@3
       inputs:
         mavenPomFile: 'pom.xml'
